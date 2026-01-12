@@ -11,7 +11,7 @@ const Projects = () => {
       id: 1,
       title: "BAQUI APP MÓVIL",
       category: "ANDROID NATIVE & .NET API",
-      image: "src/img/baquiaplica.jpeg",
+      image: "/img/baquiaplica.jpeg",
       tech: [
         { name: "Kotlin", icon: <SiKotlin className="text-purple-500" /> },
         { name: "Compose", icon: <SiJetpackcompose className="text-green-400" /> },
@@ -26,7 +26,7 @@ const Projects = () => {
       id: 2,
       title: "BAQUI WEB",
       category: "SPA & CATÁLOGO DIGITAL",
-      image: "src/img/Baquiwebcontac.jpeg", 
+      image: "/img/Baquiwebcontac.jpeg", 
       tech: [
         { name: "React", icon: <SiReact className="text-cyan-400" /> },
         { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600" /> },
@@ -40,7 +40,7 @@ const Projects = () => {
       id: 3,
       title: "DIRECTORIO EMPRESARIAL",
       category: "LARAVEL FULL STACK",
-      image: "src/img/directorio.jpeg",
+      image: "/img/directorio.jpeg",
       tech: [
         { name: "Laravel", icon: <SiLaravel className="text-red-600" /> },
         { name: "React", icon: <SiReact className="text-cyan-400" /> },
@@ -56,7 +56,7 @@ const Projects = () => {
       // --- ACTUALIZACIÓN FLORERÍA SAC ---
       title: "CATÁLOGO FLORERÍA",
       category: "LARAVEL & TAILWIND",
-      image: "src/img/floreriasac.jpeg",
+      image: "/img/floreriasac.jpeg",
       tech: [
         { name: "Laravel", icon: <SiLaravel className="text-red-600" /> },
         { name: "PHP", icon: <SiPhp className="text-blue-500" /> },
