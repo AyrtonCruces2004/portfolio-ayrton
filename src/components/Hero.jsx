@@ -111,7 +111,7 @@ const Hero = () => {
 
           {/* Botón CV - Circular Glass */}
           <motion.a
-            href="./CV/CALDERON_AYRTON_CV.pdf" 
+            href="/CALDERON_AYRTON_CV.pdf" 
             download
             whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)", borderColor: "rgba(255,255,255,0.6)" }}
             whileTap={{ scale: 0.95 }}
