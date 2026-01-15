@@ -10,29 +10,110 @@ const Certifications = () => {
   const certifications = [
     {
       id: 1,
-      title: "Desarrollo de Apps Móviles",
-      issuer: "Google / U. Complutense",
-      date: "2025",
-      image: "https://images.unsplash.com/photo-1589330694653-4a8b2436a223?w=800&q=80", // FOTO REFERENCIAL
-      link: "#" // Opcional: link a la credencial digital si tienes
-    },
+      title: "Curso Excel Intermedio",
+      issuer: "Universidad Nacional de Ingeniería",
+      date: "2023",
+      image: "/certf/excel_Intermedio.jpg",
+      link: "#"
+    },  
     {
       id: 2,
-      title: "Certificado de Prácticas",
+      title: "Constancia de trabajo (Practicante sistemas)",
       issuer: "BIOLAC S.A.C.",
-      date: "2026",
-      // Aquí pondrías una captura bonita de tu PDF
-      image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=800&q=80",
+      date: "Agosto 2025- Enero 2026",
+      image: "/certf/certificado_trabajo.png",
       link: "#" 
     },
     {
       id: 3,
-      title: "Full Stack Developer",
-      issuer: "Udemy / Platzi",
-      date: "2024",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
-      link: "#" 
+      title: "Especialista de soporte Técnico de computadoras",
+      issuer: "Universidad Tecnológica del Perú",
+      date: "2023",
+      image: "/certf/especialista_soporte.jpg",
+      link: "#"
     },
+    {
+      id: 4,
+      title: "Certificado Ingles Básico A2",
+      issuer: "Universidad Tecnológica del Perú",
+      date: "2023",
+      image: "/certf/certificado_ingles.jpg",
+      link: "#"
+    },
+    {
+      id: 5,
+      title: "SQL - Base de Datos 1",
+      issuer: "Universidad Nacional de Ingeniería",
+      date: "2025",
+      image: "/certf/sql_basededatos1.png",
+      link: "#"
+    },
+    {
+      id: 6,
+      title: "Programación en PYTHON Básico",
+      issuer: "Universidad Nacional de Ingeniería",
+      date: "2025",
+      image: "/certf/programacionphyton1.png",
+      link: "#"
+    },
+    {
+      id: 7,
+      title: "Ciberseguridad: Ethical Hacking (C|EH)",
+      issuer: "Universidad Nacional de Ingeniería",
+      date: "2025",
+      image: "/certf/ciberseguridad.png",
+      link: "#"
+    },
+    {
+      id: 8,
+      title: "Fundamentos de Gestión de Proyectos bajo el enfoque Scrum",
+      issuer: "Universidad Nacional de Ingeniería",
+      date: "2025",
+      image: "/certf/fundamentos_gestionscrum.jpg",
+      link: "#"
+    },
+    {
+      id: 9,
+      title: "Asistente STEM Algorítmica",
+      issuer: "Universidad Tecnológica del Perú",
+      date: "2024",
+      image: "/certf/asistentealgo.jpg",
+      link: "#"
+    },
+    {
+      id: 10,
+      title: "Certificado de Cisco® CCNA v7: Switching, Routing, and Wireless",
+      issuer: "Universidad Tecnológica del Perú",
+      date: "2023",
+      image: "/certf/ciscoredesccnav7.jpg",
+      link: "#"
+    },
+    {
+      id: 11,
+      title: "ScrumFundamentalsCertified",
+      issuer: "Universidad Tecnológica del Perú",
+      date: "2025",
+      image: "/certf/FUNDAMENTOSSCRUM.jpg",
+      link: "#"
+    },
+    {
+      id: 12,
+      title: "Desarrollo Back-End Basico",
+      issuer: "Ministerio de Trabajo y promoción del Perú",
+      date: "2025",
+      image: "/certf/certi_backend.jpg",
+      link: "#"
+    },
+    {
+        id: 13,
+        title: "Operador de camaras",
+        issuer: "Municipalidad de san juan de lurigancho",
+        date: "2025",
+        image: "/certf/luriganchoxd.jpg",
+        link: "#"
+      },
+
+
   ];
 
   return (
