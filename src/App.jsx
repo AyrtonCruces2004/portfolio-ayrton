@@ -1,9 +1,7 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
+// ... otros imports ...
 import Projects from "./components/Projects";
-import Footer from "./components/Footer"; // <--- Importar Footer
+import Certifications from "./components/Certifications"; // <--- IMPORTAR
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -14,7 +12,9 @@ export default function App() {
       <Skills />
       <Projects />
       
-      {/* Sección 5: Footer Elegante */}
+      {/* Sección Nueva */}
+      <Certifications />
+      
       <Footer />
     </div>
   )
