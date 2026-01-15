@@ -31,6 +31,7 @@ const Projects = () => {
         { name: "React", icon: <SiReact className="text-cyan-400" /> },
         { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600" /> },
         { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> }
+        { name: "SQL", icon: <FaDatabase className="text-gray-400" /> }
       ],
       description: "Aplicación de Página Única (SPA) desarrollada con React.js para el sector alimentario. Cuenta con navegación dinámica (React Router), animaciones interactivas (AOS) y un módulo de 'Libro de Reclamaciones' que valida y envía formularios a una API RESTful.",
       learnings: "Perfeccioné la arquitectura basada en componentes reutilizables y la gestión de rutas sin recarga. Aprendí a conectar el Frontend con el Backend mediante peticiones HTTP asíncronas para el registro de datos en SQL Server.",
