@@ -12,7 +12,7 @@ const Certifications = () => {
       title: "Constancia de Egresado (Ing. Sistemas)",
       issuer: "Universidad Tecnológica del Perú",
       date: "2026",
-      image: "/certf/constancia_egresado.jpg", // <--- Asegúrate que este sea el nombre de tu FOTO
+      image: "/certf/ConstanciaEgresado.jpg", // <--- Asegúrate que este sea el nombre de tu FOTO
       link: "#" 
     },
     // ... TUS OTROS CERTIFICADOS ...
