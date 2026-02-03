@@ -5,9 +5,17 @@ import { FaTimes, FaAward, FaExternalLinkAlt } from "react-icons/fa";
 const Certifications = () => {
   const [selectedId, setSelectedId] = useState(null);
 
-  // DATOS DE TUS CERTIFICACIONES
-  // Reemplaza los "src" con las rutas de tus imágenes reales en la carpeta public (ej: /img/certificado1.jpg)
   const certifications = [
+    // 1. TU NUEVA CONSTANCIA (La convertiste a imagen)
+    {
+      id: 0,
+      title: "Constancia de Egresado (Ing. Sistemas)",
+      issuer: "Universidad Tecnológica del Perú",
+      date: "2026",
+      image: "/certf/constancia_egresado.jpg", // <--- Asegúrate que este sea el nombre de tu FOTO
+      link: "#" 
+    },
+    // ... TUS OTROS CERTIFICADOS ...
     {
       id: 1,
       title: "Curso Excel Intermedio",
@@ -105,15 +113,13 @@ const Certifications = () => {
       link: "#"
     },
     {
-        id: 13,
-        title: "Operador de camaras",
-        issuer: "Municipalidad de san juan de lurigancho",
-        date: "2025",
-        image: "/certf/luriganchoxd.jpg",
-        link: "#"
-      },
-
-
+      id: 13,
+      title: "Operador de camaras",
+      issuer: "Municipalidad de san juan de lurigancho",
+      date: "2025",
+      image: "/certf/luriganchoxd.jpg",
+      link: "#"
+    },
   ];
 
   return (
@@ -125,8 +131,9 @@ const Certifications = () => {
       {/* Título */}
       <div className="relative z-10 text-center mb-16 px-4">
         <span className="text-blue-400 font-semibold tracking-widest text-sm uppercase">Mis Logros</span>
+        {/* TITULO ACTUALIZADO: Formación y Certificaciones */}
         <h2 className="text-4xl font-bold text-white mt-2">
-          Certificaciones <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Oficiales</span>
+          Formación y <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Certificaciones</span>
         </h2>
       </div>
 
@@ -172,7 +179,7 @@ const Certifications = () => {
 
       {/* MODAL (ZOOM) */}
       <AnimatePresence>
-        {selectedId && (
+        {selectedId !== null && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             
             {/* Fondo Oscuro (Backdrop) */}
