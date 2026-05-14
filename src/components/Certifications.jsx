@@ -14,10 +14,10 @@ const Certifications = () => {
       title: "Bachiller en Ingeniería de Sistemas e Informática",
       issuer: "Universidad Tecnológica del Perú",
       date: "2026",
-      image: publicCertf("DIPLOMABACHILLER_CALDERÓN__Página_1.jpg"),
+      image: publicCertf("/certf/DIPLOMABACHILLER_CALDERÓN__Página_1.jpg"),
       images: [
-        publicCertf("DIPLOMABACHILLER_CALDERÓN__Página_1.jpg"),
-        publicCertf("DIPLOMABACHILLER_CALDERÓN__Página_2.jpg"),
+        publicCertf("/certf/DIPLOMABACHILLER_CALDERÓN__Página_1.jpg"),
+        publicCertf("/certf/DIPLOMABACHILLER_CALDERÓN__Página_2.jpg"),
       ],
       link: "#"
     },
