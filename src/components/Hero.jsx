@@ -59,7 +59,7 @@ const Hero = () => {
           className="inline-block mb-6"
         >
           <span className="py-2 px-6 rounded-full bg-blue-500/10 border border-blue-400/20 backdrop-blur-md text-blue-200 font-medium tracking-widest text-xs uppercase shadow-[0_0_20px_rgba(59,130,246,0.3)]">
-            Egresado de Ingeniería de Sistemas
+            Bachiller en Ingeniería de Sistemas e Informática
           </span>
         </motion.div>
 
@@ -83,8 +83,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-gray-400 leading-relaxed mb-10 max-w-2xl mx-auto font-light"
         >
-          Ingeniero de Sistemas recién egresado con enfoque en el desarrollo de software. Cuento con experiencia práctica.
-          <span className="text-cyan-300 font-medium"> Creando aplicacion móvil </span> y 
+          Bachiller en Ingeniería de Sistemas e Informática con enfoque en el desarrollo de software. Cuento con experiencia práctica.
+          <span className="text-cyan-300 font-medium"> Creando aplicación móvil </span> y 
           <span className="text-blue-300 font-medium"> Plataforma web desde cero</span>. 
           Transformo ideas complejas en código limpio y funcional.
         </motion.p>

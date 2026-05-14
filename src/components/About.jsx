@@ -46,7 +46,7 @@ const About = () => {
           {/* Texto Principal */}
           <div className="space-y-6 text-gray-300 text-lg leading-relaxed font-light text-center md:text-justify">
             <p>
-              Soy un <strong className="text-white font-medium">Ingeniero de Sistemas recién egresado</strong> con una curiosidad insaciable por la tecnología. Aunque mi carrera profesional apenas comienza, mi pasión por el código me ha llevado a construir soluciones reales desde cero.
+              Soy un <strong className="text-white font-medium">Bachiller en Ingeniería de Sistemas e Informática</strong> con una curiosidad insaciable por la tecnología. Aunque mi carrera profesional apenas comienza, mi pasión por el código me ha llevado a construir soluciones reales desde cero.
             </p>
             <p>
               Durante mi etapa como practicante en <span className="text-blue-300 font-medium">Baqui</span>, no solo aprendí a programar; aprendí a comprometerme. Desarrollé aplicaciones móviles con <strong className="text-cyan-300">Kotlin</strong> y plataformas web con <strong className="text-cyan-300">React</strong>, integrando bases de datos complejas y esforzándome día a día para entregar valor real.
