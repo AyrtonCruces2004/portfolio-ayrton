@@ -2,20 +2,33 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { FaTimes, FaAward, FaExternalLinkAlt } from "react-icons/fa";
 
+/** Archivos en public/certf/ con espacios o tildes: codifica el nombre para la URL. */
+const publicCertf = (filename) => `/certf/${encodeURIComponent(filename)}`;
+
 const Certifications = () => {
   const [selectedId, setSelectedId] = useState(null);
 
   const certifications = [
-    // 1. TU NUEVA CONSTANCIA (La convertiste a imagen)
+    {
+      id: 14,
+      title: "Bachiller en Ingeniería de Sistemas e Informática",
+      issuer: "Universidad Tecnológica del Perú",
+      date: "2026",
+      image: publicCertf("DIPLOMA BACHILLER_CALDERÓN__Página_1.jpg"),
+      images: [
+        publicCertf("DIPLOMA BACHILLER_CALDERÓN__Página_1.jpg"),
+        publicCertf("DIPLOMA BACHILLER_CALDERÓN__Página_2.jpg"),
+      ],
+      link: "#"
+    },
     {
       id: 0,
       title: "Constancia de Egresado (Ing. Sistemas)",
       issuer: "Universidad Tecnológica del Perú",
       date: "2026",
-      image: "/certf/ConstanciaEgresado.jpg", // <--- Asegúrate que este sea el nombre de tu FOTO
-      link: "#" 
+      image: "/certf/ConstanciaEgresado.jpg",
+      link: "#"
     },
-    // ... TUS OTROS CERTIFICADOS ...
     {
       id: 1,
       title: "Curso Excel Intermedio",
@@ -140,7 +153,9 @@ const Certifications = () => {
       {/* GRID DE CERTIFICADOS */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {certifications.map((cert) => (
+          {certifications.map((cert) => {
+            const thumbSrc = cert.images?.[0] ?? cert.image;
+            return (
             <motion.div
               layoutId={`cert-card-${cert.id}`}
               key={cert.id}
@@ -152,7 +167,7 @@ const Certifications = () => {
               <div className="aspect-video overflow-hidden bg-slate-900 relative">
                 <motion.img
                   layoutId={`cert-image-${cert.id}`}
-                  src={cert.image}
+                  src={thumbSrc}
                   alt={cert.title}
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                 />
@@ -173,7 +188,8 @@ const Certifications = () => {
                 </div>
               </div>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
@@ -192,8 +208,11 @@ const Certifications = () => {
             />
 
             {/* Tarjeta Expandida */}
-            {certifications.map((cert) => (
-              cert.id === selectedId && (
+            {certifications.map((cert) => {
+              if (cert.id !== selectedId) return null;
+              const modalImages =
+                cert.images?.length > 0 ? cert.images : cert.image ? [cert.image] : [];
+              return (
                 <motion.div
                   layoutId={`cert-card-${cert.id}`}
                   key={cert.id}
@@ -207,14 +226,17 @@ const Certifications = () => {
                     <FaTimes />
                   </button>
 
-                  {/* Imagen Grande (Scrollable si es muy alta) */}
-                  <div className="flex-1 overflow-auto bg-black flex items-center justify-center p-2">
-                    <motion.img
-                      layoutId={`cert-image-${cert.id}`}
-                      src={cert.image}
-                      alt={cert.title}
-                      className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-[0_0_50px_rgba(0,0,0,0.5)]"
-                    />
+                  {/* Una o varias imágenes (scroll vertical si hay varias páginas) */}
+                  <div className="flex-1 min-h-0 overflow-y-auto overflow-x-hidden bg-black flex flex-col items-center gap-4 p-4">
+                    {modalImages.map((src, i) => (
+                      <motion.img
+                        key={`${cert.id}-${i}`}
+                        layoutId={i === 0 ? `cert-image-${cert.id}` : undefined}
+                        src={src}
+                        alt={modalImages.length > 1 ? `${cert.title} — página ${i + 1}` : cert.title}
+                        className="max-w-full w-full object-contain rounded-lg shadow-[0_0_50px_rgba(0,0,0,0.5)] shrink-0"
+                      />
+                    ))}
                   </div>
 
                   {/* Pie de Foto del Modal */}
@@ -237,8 +259,8 @@ const Certifications = () => {
                     )}
                   </div>
                 </motion.div>
-              )
-            ))}
+              );
+            })}
           </div>
         )}
       </AnimatePresence>
