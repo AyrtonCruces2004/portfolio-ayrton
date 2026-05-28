@@ -50,7 +50,7 @@ const Projects = () => {
       ],
       description: "Plataforma integral para la búsqueda y categorización de empresas en diversos sectores. Combina la robustez de Laravel (PHP/Blade) en el backend con la interactividad de componentes React en el frontend y Swiper.js para la presentación visual.",
       learnings: "Logré una integración híbrida eficiente incrustando componentes React dentro de vistas Blade. Implementé búsquedas avanzadas con Eloquent ORM/TSQL y diseñé una interfaz moderna y responsiva utilizando Tailwind CSS.",
-      github: "https://github.com/tu-usuario/Proyecto-Laravel-para-directorio-de-empre",
+      github: "https://github.com/AyrtonCruces2004/Proyecto-Laravel-para-directorio-de-empresas.git",
     },
     {
       id: 4,
@@ -67,7 +67,7 @@ const Projects = () => {
       // Descripción ajustada: No es un e-commerce transaccional, es un catálogo con carrito de solicitud
       description: "Catálogo digital interactivo para la exhibición de arreglos florales. Permite a los usuarios navegar por categorías, filtrar productos, gestionar un carrito de solicitudes y contactar a la empresa mediante formularios integrados con mapas dinámicos.",
       learnings: "Consolidé mis habilidades en Laravel (MVC) diseñando bases de datos SQL para inventarios. Integré librerías de UI modernas (Swiper.js, Google Maps) dentro de vistas Blade, creando una experiencia visual fluida sin la complejidad de una pasarela de pagos.",
-      github: "https://github.com/tu-usuario/floreria-sac",
+      github: "https://github.com/AyrtonCruces2004/FloreriaSac.git",
     },
   ];
 
